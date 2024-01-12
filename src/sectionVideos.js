@@ -11,19 +11,19 @@ document.getElementById('icon-X').addEventListener('click', closeVideo)
 //Array com as URLs dos vídeos
 const videos = [
 
-    'https://www.youtube.com/embed/dbQO7N5p8c8?si=sD687NH5Q88KzI3S',
-    'https://www.youtube.com/embed/wTtZXOScvS4?si=Ru9oFZqNqGPEvsl6',
-    'https://www.youtube.com/embed/1tiNK43kKqE?si=_QJ8Ifsbw-yWpFCG',
-    'https://www.youtube.com/embed/KijREuiz5M8?si=qQtwM1wweB7QYFQC',
-    'https://www.youtube.com/embed/fqXEgSpluCk?si=oEi9NGlTppg6cS87',
-    'https://www.youtube.com/embed/53d7oHeJxrg?si=sKni_SlZnvBojOiZ',
-    'https://www.youtube.com/embed/WZtVbv1Rp7s?si=u4g6vvTA-iG6j-JD',
-    'https://www.youtube.com/embed/BpD2JzikRaI?si=hg6OeZraprc07W08',
-    'https://www.youtube.com/embed/V1OpXygOzY4?si=s-q1r-1MpR7xBGW2',
-    'https://www.youtube.com/embed/Sim2pfEfRTo?si=NrZpztXmr9Hc7HFb',
-    'https://www.youtube.com/embed/aUYabM2R2Vc?si=dPDWZS-EAg4yv2Qx',
-    'https://www.youtube.com/embed/Vm59jkGXQsM?si=X8LNCkA6QqzrU2WY',
-    'https://www.youtube.com/embed/gWFIEszx88A?si=E0UmVsh4SOiEvsiS',
+    'https://www.youtube.com/embed/dbQO7N5p8c8?si=sD687NH5Q88KzI3S?autoplay=1',
+    'https://www.youtube.com/embed/wTtZXOScvS4?si=Ru9oFZqNqGPEvsl6?autoplay=1',
+    'https://www.youtube.com/embed/1tiNK43kKqE?si=_QJ8Ifsbw-yWpFCG?autoplay=1',
+    'https://www.youtube.com/embed/KijREuiz5M8?si=qQtwM1wweB7QYFQC?autoplay=1',
+    'https://www.youtube.com/embed/fqXEgSpluCk?si=oEi9NGlTppg6cS87?autoplay=1',
+    'https://www.youtube.com/embed/53d7oHeJxrg?si=sKni_SlZnvBojOiZ?autoplay=1',
+    'https://www.youtube.com/embed/WZtVbv1Rp7s?si=u4g6vvTA-iG6j-JD?autoplay=1',
+    'https://www.youtube.com/embed/BpD2JzikRaI?si=hg6OeZraprc07W08?autoplay=1',
+    'https://www.youtube.com/embed/V1OpXygOzY4?si=s-q1r-1MpR7xBGW2?autoplay=1',
+    'https://www.youtube.com/embed/Sim2pfEfRTo?si=NrZpztXmr9Hc7HFb?autoplay=1',
+    'https://www.youtube.com/embed/aUYabM2R2Vc?si=dPDWZS-EAg4yv2Qx?autoplay=1',
+    'https://www.youtube.com/embed/Vm59jkGXQsM?si=X8LNCkA6QqzrU2WY?autoplay=1',
+    'https://www.youtube.com/embed/gWFIEszx88A?si=E0UmVsh4SOiEvsiS?autoplay=1'
     
 ];
 
