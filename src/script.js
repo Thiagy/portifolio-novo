@@ -107,7 +107,7 @@ const textoAboutMe = [
   "Sou uma pessoa que enfrenta adversidades com determinação, apreciando desafios, especialmente aqueles que a maioria tende a evitar. Essa mentalidade perseverante foi cultivada desde a minha infância, uma fase da vida caracterizada por dificuldades. Na minha prática em programação, aplico os aprendizados extraídos da vida. Tenho o hábito de dedicar longas horas, por vezes até virando a noite, para resolver problemas (bugs) ou contemplar a implementação de funcionalidades mais intricadas."
 ];
 
-exibirTextoComEfeito('about-me', textoAboutMe, 20);
+exibirTextoComEfeito('about-me', textoAboutMe, 85);
 
 // Utilização para o texto sobre minhas habilidades front end.
 const mySkillsFrontEnd = [
@@ -121,7 +121,7 @@ const mySkillsBackEnd = [
     "NodeJs | Express | Api | Mongoose | Sequelize | Prisma | MongoDB | MySQL | PostgreSQL | WebSocket | Token | bcrypt."
 ];
   
-exibirTextoComEfeito('languages-back-end', mySkillsBackEnd, 50);
+exibirTextoComEfeito('languages-back-end', mySkillsBackEnd, 85);
 
 // Utilização para o texto sobre minha formação.
 const text_graduation = [
