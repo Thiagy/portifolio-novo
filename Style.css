@@ -272,7 +272,12 @@ header{
     font-size: 16px;
 }
 
-.main-text a{
+
+.box-social-media{
+    display: flex;
+    gap: 12px;
+}
+.box-social-media a{
     color: #CCCCCC;
     text-transform: uppercase;
     font-weight: 400;
@@ -285,7 +290,7 @@ header{
     animation: pulsate 3s ease-in-out infinite;
 }
 
-.main-text a:hover{
+.box-social-media a:hover{
 
     border: 1px solid #0f0;
     box-shadow: 0 0 6px #00FF00;
