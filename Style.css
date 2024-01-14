@@ -278,10 +278,10 @@ header{
     font-weight: 400;
     letter-spacing: 6px;
     font-size: 0.8rem;
-    border: 1px solid #0f0;
+    border: 1px solid #CCCCCC;
     border-radius: 12px;
     padding: 5px 10px;
-    transition: 1s;
+    transition: 2s;
     
 }
 
