@@ -104,7 +104,7 @@ exibirTextoComEfeito('texto-profissoes', profissoes, 25);
 
 // Utilização para o texto "about-me"
 const textoAboutMe = [
-  "Sou uma pessoa que não se encurva às dificuldades, gosto de desafios, principalmente daqueles que a maioria costuma desistir. Vivo tais experiências desde a infância quando a vida já era difícil. Na programação costumo aplicar o que experimento vida, gosto de passar horas (às vezes viro a noite) tentando resolver bugs ou pensando em como desenvolver funcionalidades mais complexas."
+  "Sou uma pessoa que enfrenta adversidades com determinação, apreciando desafios, especialmente aqueles que a maioria tende a evitar. Essa mentalidade perseverante foi cultivada desde a minha infância, uma fase da vida caracterizada por dificuldades. Na minha prática em programação, aplico os aprendizados extraídos da vida. Tenho o hábito de dedicar longas horas, por vezes até virando a noite, para resolver problemas (bugs) ou contemplar a implementação de funcionalidades mais intricadas."
 ];
 
 exibirTextoComEfeito('about-me', textoAboutMe, 20);

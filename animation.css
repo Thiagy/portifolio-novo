@@ -1,0 +1,176 @@
+.loading {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+ .estrela {
+    margin: 10px 0;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 26px solid transparent;
+    border-bottom: 23px solid #e11a2b;
+    border-left: 23px solid transparent;
+    transform: rotate(180deg);
+}
+
+.estrela:before {
+    border-bottom: 18px solid #e11a2b;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -9px;
+    left: -16px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+
+.estrela:after {
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: -26px;
+    width: 0px;
+    height: 0px;
+    border-right: 25px solid transparent;
+    border-bottom: 22px solid #e11a2b;
+    border-left: 27px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+    content: '';
+}
+ /*Box Estrela*/
+.box-estrela .estrela {
+    position: absolute;
+    transform: rotate(180deg) scale(0.5);
+    opacity: 0.4;
+}
+
+.box-estrela .estrela,
+.box-estrela .estrela:before,
+.box-estrela .estrela:after {
+    border-bottom-color: #3de1e4;
+}
+
+.box-estrela .estrela1 {
+    top: -20px;
+    left: 5px;
+    -webkit-animation: motion-stars 1s 0.125s ease infinite;
+    animation: motion-stars 1s 0.125s ease infinite;
+}
+
+.box-estrela .estrela2 {
+    left: 25px;
+    top: -10px;
+    -webkit-animation: motion-stars 1s 0.3s ease infinite;
+    animation: motion-stars 1s 0.3s ease infinite;
+}
+
+.box-estrela .estrela3 {
+    left: 35px;
+    top: 10px;
+    -webkit-animation: motion-stars 1s 0.425s ease infinite;
+    animation: motion-stars 1s 0.425s ease infinite;
+}
+
+.box-estrela .estrela4 {
+    top: 30px;
+    left: 27px;
+    -webkit-animation: motion-stars 1s 0.540s ease infinite;
+    animation: motion-stars 1s 0.540s ease infinite;
+}
+
+.box-estrela .estrela5 {
+    top: 40px;
+    left: 5px;
+    -webkit-animation: motion-stars 1s 0.665s ease infinite;
+    animation: motion-stars 1s 0.665s ease infinite;
+}
+
+.box-estrela .estrela6 {
+    top: 30px;
+    left: -15px;
+    -webkit-animation: motion-stars 1s 0.79s ease infinite;
+    animation: motion-stars 1s 0.79s ease infinite;
+}
+
+.box-estrela .estrela7 {
+    top: 10px;
+    left: -25px;
+    -webkit-animation: motion-stars 1s 0.9s ease infinite;
+    animation: motion-stars 1s 0.9s ease infinite;
+}
+
+.box-estrela .estrela8 {
+    top: -10px;
+    left: -15px;
+    -webkit-animation: motion-stars 1s 1s ease infinite;
+    animation: motion-stars 1s 1s ease infinite;
+}
+ @-webkit-keyframes motion-stars {
+    0% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(0px, 0) scale(0.6);
+    }
+    25% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(0, 0) scale(0.2);
+    }
+    50% {
+        opacity: 0.7;
+        transform: rotate(180deg) translate(5px, 5px) scale(0.4);
+    }
+    75% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(0, 0) scale(0.6);
+    }
+    80% {
+        opacity: 1;
+        transform: rotate(180deg) translate(5px, 0) scale(0.1);
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(0, 0) scale(0.6);
+    }
+}
+
+@keyframes motion-stars {
+    0% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(0px, 0) scale(0.6);
+    }
+    25% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(0, 0) scale(0.2);
+    }
+    50% {
+        opacity: 0.7;
+        transform: rotate(180deg) translate(5px, 5px) scale(0.4);
+    }
+    75% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(0, 0) scale(0.6);
+    }
+    80% {
+        opacity: 1;
+        transform: rotate(180deg) translate(5px, 0) scale(0.1);
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(0, 0) scale(0.6);
+    }
+}

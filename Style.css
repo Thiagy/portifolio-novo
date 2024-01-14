@@ -5,22 +5,46 @@
     font-family: "poppins";
 }
 
+
 html, body{
 
     scroll-behavior: smooth;
+    z-index: 1;
+    background-color: #000000;
+
 }
+
+main {
+    position: relative;
+}
+#content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+canvas{
+    
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+
+}
+
 /*Css sobre a barra de navegação.*/
 ::-webkit-scrollbar {
     width: 8px;
-    height: 80px; 
+    height: 20px; 
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #689af8; 
+
+    background-color:#00FF00;; 
     border-radius: 4px;
     
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: #3330fa;
+    background-color: #0f0;
 }
 ::-webkit-scrollbar-track{
     background-color: white;
@@ -31,13 +55,10 @@ a{
 ul{
     list-style: none;
 }
-body{
-    
-    background-color: #000000;
-}
+
 
 ::selection{
-    background-color: #3330fa;
+    background-color: #0f0;
     color: #fff;
 }
 /*==========Header=============*/
@@ -138,6 +159,26 @@ header{
     border-radius: 50%;
     position: relative;
     overflow: hidden;
+    transform:  translateY(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+
+         transform:  translateY(0px);
+
+    }
+    50%{
+
+        transform:  translateY(-2px);
+
+    }
+    100%{
+
+        transform:  translateY(0px);
+
+   }
 }
 
 .main-image::after {
@@ -157,7 +198,6 @@ header{
 
     transform: skewX(-0.08turn) translateX(275%);
     transition: 2000ms ease;
-
 }
   
 
@@ -184,7 +224,6 @@ header{
     margin: 90px auto 20px auto;
     
 }
-
 
 .main-text{
     width: 56%;
@@ -214,7 +253,7 @@ header{
 }
 
 .main-text h1{
-    color: #689af8;
+    color: #00FF00;
     font-size: 5rem;
     line-height: 4rem;
     letter-spacing: 1px;
@@ -222,24 +261,41 @@ header{
 }
 
 .main-text p{
-    color: #9999;
+
+    color: #CCCCCC;
     margin:30px 0px;
     letter-spacing: 1px;
     font-size: 16px;
 }
 
-.main-text a,
-.Sumary-title p, 
-.btn a,
-.btn-c a{
-    color: #fff;
+.main-text a{
+    color: #CCCCCC;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 6px;
     font-size: 0.8rem;
-    border-top: 1px solid #689af8;
-    padding: 10px 10px 10px 0px;
-    transition: all 508ms cubic-bezier(0.77,0,0.175,1);
+    border: 1px solid #0f0;
+    border-radius: 12px;
+    padding: 5px 10px;
+    transition: 1s;
+    
+}
+
+.main-text a:hover{
+
+    border: 1px solid #0f0;
+    box-shadow: 0 0 6px #00FF00;
+}
+
+.Sumary-title p{
+    color: #CCCCCC;
+    font-family: "poppins";
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-top: 1px solid #0f0;
+    padding: 5px 10px;
     
 }
 
@@ -285,7 +341,7 @@ header{
 
 .Sumary-title strong, #languages strong, #project, #education strong {
 
-    color: #689af8;
+    color: #0f0;
     text-transform: uppercase;
     letter-spacing: 3px;
 
@@ -308,28 +364,31 @@ header{
     width: 80%;
     margin:auto;
     padding-top: 50px;
-    gap: 20px;
 
 }
 
 #container-languages{
 
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    
     border-bottom: 1px solid rgba(15,15,15);
 
 }
 
 #languages-front-end, #languages-back-end{
     padding: 20px;
-    color: white;
+    z-index: 0;
+    color: #CCCCCC;
 }
 
 .Language-Box{
     
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 49%;
     
 }
 
@@ -337,15 +396,15 @@ header{
     font-size: 1.3rem;
     color: #fff;
     letter-spacing: 1px;
-    border-bottom: 1px solid #689af8;
+    border-bottom: 1px solid #00FF00;
 
 }
 
 .Language-Box span{
 
-    color: #689af8;
+    color: #0f0;
     font-weight: 600;
-    font-size: 4rem;
+    
 
 }
 
@@ -384,36 +443,20 @@ header{
     cursor: pointer;
     transition: .5s;
     box-shadow: 0 0 2px 2px white;
-    animation: pulsate 3s infinite;
+    animation: pulsate 5s infinite;
 }
-
 
 @keyframes pulsate {
 
 0% {
-
-    box-shadow: 0 0 2px 2px white;
-
+    box-shadow: 0 0 0 0 white;
 }
-
-25% {
-
-    box-shadow: 0 0 2.5px 2.5px white;
-
-}
-
 50% {
-
-    box-shadow: 0 0 2px 2px white;
-
+    box-shadow: 0 0 0 1px rgba(0, 128, 0, 0);
 }
-
 100% {
-
-    box-shadow: 0 0 2.5px 2.5px white;
-
+    box-shadow: 0 0 0 0 white;
 }
-
 }
 
 
@@ -459,23 +502,26 @@ header{
     margin: 75px auto 20px auto;
 }
 
-#div_btn_show_more button{
+#btn_show_more{
 
     height: 40px;
     width: 90px;
-    box-shadow: 0 0 3px white;
+    border: 1px solid white;
     border-radius: 12px;
     cursor: pointer;
     background-color: transparent;
     color: white;
     transition: .5s;
-    animation: pulsate 3s infinite;
 
 
 }
-#div_btn_show_more button:hover{
+#btn_show_more:hover{
 
-    color: #689af8;
+    text-shadow: 0 0 3px #00FF00;
+    color: #00FF00;
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px #0f0, 0 0 5px #0f0;
+    
 
 }
   
@@ -492,7 +538,7 @@ header{
     padding-bottom: 40px;
 }
 #access span{
-    color: #3330fa;
+    color: #0f0;
 }
 
 .div-text-project p{
@@ -521,7 +567,7 @@ header{
 
 .link_project{
 
-    color: #689af8;
+    color: #0f0;
     position: absolute;
     z-index: 9;
     left: 5px;
@@ -530,12 +576,15 @@ header{
     border-radius: 12px;
     font-size: 12px;
     box-shadow: 0 0 2px white;
+    transition: .4s;
 
 }
 
 .link_project:hover{
 
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px #00FF00;
+    color: white;
+    text-shadow: 0 0 3px white;
 }
 /*===========Videos========*/
 
@@ -557,13 +606,10 @@ header{
 
 #div_project_video{
 
-    
     height: 400px;
     width: 620px;
     min-width: 310px;
     border-radius: 10px;
-    
-    
 }
 
 #div_project_video iframe{
@@ -571,10 +617,7 @@ header{
     box-shadow: 0 0 3px white;
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
     border-radius: 10px;
-    transition: .5s;
     
 }
 
@@ -637,47 +680,8 @@ header{
     cursor: pointer;
 
 }
-.box ul li{
-    color:#fff;
-    font-size: 1.0rem;
-    margin: 5px 0px;
-}
 
-.mySwiper{
-    margin: 50px 0px;
-    max-width: 1050px;
-}
-
-.slider-btn{
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 0px 10px auto;
-}
-
-.swiper-button-prev,
-.swiper-button-next{
-    position: static !important;
-    transform: translate(0,0);
-    margin: 10px 0px 0px 10px !important;
-}
-
-
-
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    font-size: 20px !important;
-    font-weight: 800;
-    color: #fff;
-}
-
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-/*====Carreira==============================================*/
+/*==============Educação=================*/
 
 #education{
 
@@ -706,7 +710,7 @@ header{
 
 .box-education p{
 
-    color: white;
+    color: #CCCCCC;
     padding-left: 20px;
     margin: 15px 0;
 
@@ -718,16 +722,17 @@ header{
 
 }
 
-/*====Footer==============================================*/
+/*================Footer==================*/
 
 footer{
     padding: 50px 0;
     position: relative;
 }
-
-footer #footer-logo{
+#footer-logo{
+    padding: 50px 0;
     color: #fff;
-    text-transform: uppercase;
+    padding: 50px 0;
+    font-size: 'poppins';
     font-weight: 700;
     font-size: 1.3rem;
     
@@ -736,7 +741,7 @@ footer #footer-logo{
     animation: move-right 15s linear infinite;
 }
 
-footer #footer-logo p{
+#footer-logo p{
     
     font-size: 14px;
     
@@ -928,7 +933,12 @@ footer #footer-logo p{
     }
     #div_project_video{
 
-        height: 300px;        
+        height: 360px;        
+    }
+    iframe{
+
+        height: 360px;  
+        border: 1px solid red;      
     }
     .box-education h4{
         font-size: 15px;
